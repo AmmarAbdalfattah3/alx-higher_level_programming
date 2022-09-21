@@ -4,3 +4,4 @@
 4-print_hexa.py prints all numbers from 0 to 98 in decimal and in hexadecimal
 5-print_comb2.py  prints numbers from 0 to 99.
 7-islower.py checks for lowercase character.
+8-uppercase.py prints a string in uppercase followed by a new line.
