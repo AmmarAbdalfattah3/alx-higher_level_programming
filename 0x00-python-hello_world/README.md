@@ -6,3 +6,4 @@
 5-print_string.py print 3 times a string stored in the variable str
 6-concat.py print Welcome to Holberton School!
 7-edges.py printing a defined letters
+8-concat_edges.py print object-oriented programming with Python
