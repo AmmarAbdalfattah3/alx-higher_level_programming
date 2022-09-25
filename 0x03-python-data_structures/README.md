@@ -5,3 +5,4 @@
 4-new_in_list.py replaces an element in a list at a specific position without modifying the original list (like in C).
 5-no_c.py removes all characters c and C from a string.
 7-add_tuple.py adds 2 tuples.
+8-multiple_returns.py returns a tuple with the length of a string and its first character.
