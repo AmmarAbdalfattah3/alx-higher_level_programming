@@ -80,7 +80,7 @@ class Square:
         """prints in stdout"""
 
         for x in range(self.__position[1]):
-            print("")
+            print()
         for n in range(self.__size):
             print("".join([" " for i in range(self.__position[0])]), end="")
             print("".join(["#" for m in range(self.__size)]))
