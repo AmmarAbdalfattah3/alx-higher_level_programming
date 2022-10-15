@@ -1,0 +1,60 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+Import an add_integer from 0-add_integer
+>>> from kill import add_integer
+
+using two postive integes:
+    >>> add_integer(1, 2)
+    3
+
+using one positive and another neagtive:
+    >>> add_integer(100, -2)
+    98
+
+using  one argument:
+    >>> add_integer(2)
+    100
+
+using a float and a negative integer:
+    >>> add_integer(100.3, -2)
+    98
+
+using more than 2 argumets:
+    >>> add_integer(1, 2, 4)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+using an interger and a string:
+    >>> add_integer(1, "test")
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+using an infinity as argument:
+    >>> add_integer(float("inf"))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+using more than 2 argumets:
+    >>> add_integer(1, float("inf"))
+    Traceback (most recent call last):
+    ...
+    cannot convert float infinity to integer
+
+using a nan as argument:
+    >>> add_integer(float("nan"))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+using a nan as argument:
+    >>> add_integer(2, float("nan"))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
