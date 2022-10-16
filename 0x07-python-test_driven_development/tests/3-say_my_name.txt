@@ -1,0 +1,60 @@
+The ``3-say_my_name`` module
+======================
+
+Using ``say_my_name``
+-------------------
+
+Import say_my_name function form 3-say_my_name
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Using the first parameter as number:
+    >>> say_my_name(9, "jay")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Using the second parameter as number:
+    >>> say_my_name("James", 78)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+Using the first parameter as a list of a string:
+    >>> say_my_name(["John", "Jack"], "Eren")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Using the second parameter as a list of a string:
+    >>> say_my_name("Eren", ["John", "Jack"])
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+Using the first parameter as a dictionary:
+    >>> say_my_name({"John": 9, "Jack": 8}, "Eren")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Using the second parameter as dictionary:
+    >>> say_my_name("Eren", {"Jack": 8, "John": 9})
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+Using the last_name as a string and last_name default value:
+    >>> say_my_name("Jack")
+    My name is Jack
+
+Using the last_name as None t_name default value:
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+Using more than 2 paramaters:
+    >>> say_my_name("omar", "ali", "sayed")
+    Traceback (most recent call last):
+    ...
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
