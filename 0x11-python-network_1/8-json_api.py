@@ -10,8 +10,8 @@ if __name__ == "__main__":
     letter = ""
     if len(sys.argv) > 1:
         letter = sys.argv[1]
-        data = {"q": letter}
-        res = requests.post(url, data=data)
+    data = {"q": letter}
+    res = requests.post(url, data=data)
     try:
         res = res.json()
         if res == {}:
