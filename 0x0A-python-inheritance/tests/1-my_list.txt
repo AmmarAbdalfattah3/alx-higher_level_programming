@@ -1,17 +1,17 @@
 check that module docstring exits:
-         >>> module_doc = __import__("1-my_list").__doc__
-         >>> len(module_doc) > 1
-         True
+        >>> module_doc = __import__("1-my_list").__doc__
+        >>> len(module_doc) > 1
+        True
 
 check that Mylist class docstring exits:
-         >>> my_list_doc = __import__("1-my_list").MyList.__doc__
-         >>> len(my_list_doc) > 1
-         True
+        >>> my_list_doc = __import__("1-my_list").MyList.__doc__
+        >>> len(my_list_doc) > 1
+        True
 
 Check that print_sorted method docstring exits:
-	    >>> print_doc = __import__("1-my_list").MyList.print_sorted.__doc__
-	    >>> len(print_doc) > 1
-	    True
+	>>> print_doc = __import__("1-my_list").MyList.print_sorted.__doc__
+	>>> len(print_doc) > 1
+	True
 
 Import:
         >>> MyList = __import__('1-my_list').MyList

@@ -4,6 +4,7 @@
 
 class MyList(list):
     """a child of List class"""
+
     def __init__(self):
         """initializes the class instance"""
         super().__init__()
