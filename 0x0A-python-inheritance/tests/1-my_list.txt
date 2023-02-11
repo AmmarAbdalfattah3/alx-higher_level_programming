@@ -5,7 +5,7 @@ check that module docstring exits:
 
 check that Mylist class docstring exits:
          >>> my_list_doc = __import__("1-my_list").MyList.__doc__
-         >>> len(my_list_doc)) > 1
+         >>> len(my_list_doc) > 1
          True
 
 Check that print_sorted method docstring exits:
