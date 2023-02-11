@@ -19,7 +19,7 @@ Import:
 
 
 Checking that sorting and appending works:
-        >>> m_list = Mylist()
+        >>> m_list = MyList()
 	    >>> m_list.append(1)
 	    >>> m_list.append(6)
 	    >>> m_list.append(3)
