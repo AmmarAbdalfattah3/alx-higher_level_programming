@@ -9,22 +9,22 @@ check that Mylist class docstring exits:
          True
 
 Check that print_sorted method docstring exits:
-	  >>> print_doc = __import__("1-my_list").MyList.print_sorted.__doc__
-	  >>> len(print_doc) > 1
-	  True
+	    >>> print_doc = __import__("1-my_list").MyList.print_sorted.__doc__
+	    >>> len(print_doc) > 1
+	    True
 
 Import:
-    >>> MyList = __import__('1-my_list').MyList
+        >>> MyList = __import__('1-my_list').MyList
 
 
 
 Checking that sorting and appending works:
-      >>> m_list = Mylist()
-	  >>> m_list.append(1)
-	  >>> m_list.append(6)
-	  >>> m_list.append(3)
-	  >>> m_list.append(5)
-	  >>> print(m_list)
-	  [1, 6, 3, 5]
-      >>> m_list.print_sorted()
-      [1, 3, 5, 6]
+        >>> m_list = Mylist()
+	    >>> m_list.append(1)
+	    >>> m_list.append(6)
+	    >>> m_list.append(3)
+	    >>> m_list.append(5)
+	    >>> print(m_list)
+	    [1, 6, 3, 5]
+        >>> m_list.print_sorted()
+        [1, 3, 5, 6]
