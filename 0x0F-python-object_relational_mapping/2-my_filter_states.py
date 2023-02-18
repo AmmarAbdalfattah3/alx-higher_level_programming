@@ -17,6 +17,7 @@ if __name__ == "__main__":
     cmd = "SELECT * FROM states WHERE name='{}' ORDER BY id;".format(name)
     data_base.execute(cmd)
     for state in data_base.fetchall():
-        print(state)
+        if state[1] == name:
+            print(state)
     data_base.close()
     db.close()
