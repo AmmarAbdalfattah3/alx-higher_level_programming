@@ -18,3 +18,5 @@ if __name__ == "__main__":
     data_base.execute(cmd)
     for state in data_base.fetchall():
         print(state)
+    data_base.close()
+    db.close()
