@@ -14,7 +14,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3])
     data_base = db.cursor()
     name = sys.argv[4]
-    cmd = "SELECT * FROM states WHERE name='{:s}' ORDER BY id;".format(name)
+    cmd = "SELECT * FROM states WHERE name='{:s}'\ ORDER BY id;".format(name,)
     data_base.execute(cmd)
     for state in data_base.fetchall():
         print(state)
