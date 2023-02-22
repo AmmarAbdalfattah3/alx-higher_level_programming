@@ -18,4 +18,11 @@ if __name__ == "__main__":
            FROM states WHERE name='{}') ORDER BY cities.id".format(state,)
     data_base.execute(cmd)
     cities = data_base.fetchall()
-    print(", ".join([city[2] for city in cities]))
+    separate = ""
+    for city in cities:
+        print(separate, end="")
+        print(city[0], end="")
+        separate = ", "
+    print()
+    data_base.close()
+    db.close()
