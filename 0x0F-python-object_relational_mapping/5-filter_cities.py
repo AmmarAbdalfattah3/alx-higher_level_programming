@@ -18,4 +18,4 @@ if __name__ == "__main__":
            FROM states WHERE name='{}') ORDER BY cities.id".format(state,)
     data_base.execute(cmd)
     cities = data_base.fetchall()
-    print(", ".join([city[2] for city in cities if city[4] == sys.argv[4]]))
+    print(", ".join([city[2] for city in cities if city[4] == state]))
