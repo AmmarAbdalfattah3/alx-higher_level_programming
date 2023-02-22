@@ -15,9 +15,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3])
     data_base = db.cursor()
     cmd = "SELECT cities.name FROM cities WHERE cities.state_id=(SELECT id\
-           FROM states WHERE name='{}') ORDER BY cities.id".format(state)
+           FROM states WHERE name='{}') ORDER BY cities.id".format(state,)
     data_base.execute(cmd)
     cities = data_base.fetchall()
-    print(", ".join([city for city in cities]))
-    data_base.close()
-    db.close()
+    print(", ".join([city[2] for city in cities]))
