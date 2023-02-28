@@ -55,3 +55,9 @@ Print an integer:
     Traceback (most recent call last):
     ...
     TypeError: text must be a string
+
+Print a float:
+    >>> text_indentation(8.89)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
