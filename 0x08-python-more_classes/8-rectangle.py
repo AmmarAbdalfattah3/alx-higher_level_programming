@@ -21,25 +21,25 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Instance property width setter"""
-        if type(width) is not int:
-            raise TypeError('with must be an integer')
-        if width < 0:
-            raise ValueError('with must be >= 0')
+        if type(value) is not int:
+            raise TypeError('width must be an integer')
+        if value < 0:
+            raise ValueError('width must be >= 0')
         self.__width = value
 
     @property
     def height(self):
         """Instance property height getter"""
-        return self.__width
+        return self.__height
 
     @height.setter
     def height(self, value):
         """Instance property height setter"""
-        if type(width) is not int:
-            raise TypeError('with must be an integer')
-        if width < 0:
-            raise ValueError('with must be >= 0')
-        self.__width = value
+        if type(value) is not int:
+            raise TypeError('height must be an integer')
+        if value < 0:
+            raise ValueError('height must be >= 0')
+        self.__height = value
 
     def area(self):
         """ calculates rectangle area"""
