@@ -63,4 +63,4 @@ class Rectangle:
                 rec_form.append('#')
             if i < self.__height - 1:
                 rec_form.append('\n')
-        return rec_form.join('')
+        return ('').join(rec_form)

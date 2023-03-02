@@ -3,12 +3,11 @@
 
 
 class Rectangle:
-	"""class definition of a rectangle"""
-
-	def __init__(self, width=0, height=0):
-		"""initializer of Rectangle class"""
-		self.__width = width
-		self.__height = height
+    """class definition of a rectangle"""
+    def __init__(self, width=0, height=0):
+        """initializer of Rectangle class"""
+	self.__width = width
+	self.__height = height
 
     @property
     def width(self):
