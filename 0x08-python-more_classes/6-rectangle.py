@@ -1,16 +1,17 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """Rectangle class definition module"""
 
 
 class Rectangle:
     """class definition of a rectangle"""
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """initializer of Rectangle class"""
         self.__width = width
         self.__height = height
         type(self).number_of_instances += 1
-    
+
     @property
     def width(self):
         """Instance property width getter"""
@@ -19,7 +20,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Instance property width setter"""
-        if type(width) is not int:
+        if not isinstance(width, int):
             raise TypeError('with must be an integer')
         if width < 0:
             raise ValueError('with must be >= 0')
@@ -33,7 +34,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Instance property height setter"""
-        if type(width) is not int:
+        if not isinstance(width, int):
             raise TypeError('with must be an integer')
         if width < 0:
             raise ValueError('with must be >= 0')
@@ -41,10 +42,9 @@ class Rectangle:
 
     def area(self):
         """ calculates rectangle area"""
-        if  self.__height == 0 or self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return 0
         return self.__height * self.__width
-
 
     def perimeter(self):
         """claculates rectangle perimeter"""
@@ -53,7 +53,7 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-        """ prints the width and height of 
+        """ prints the width and height of
             a Rectangle class instance usig
             # characters
         """

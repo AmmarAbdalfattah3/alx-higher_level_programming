@@ -1,14 +1,15 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """Rectangle class definition module"""
 
 
 class Rectangle:
 	"""class definition of a rectangle"""
+
 	def __init__(self, width=0, height=0):
 		"""initializer of Rectangle class"""
 		self.__width = width
 		self.__height = height
-    
+
     @property
     def width(self):
     	"""Instance property width getter"""
