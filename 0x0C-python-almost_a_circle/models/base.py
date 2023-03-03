@@ -12,7 +12,8 @@ class Base:
     def __init__(self, id=None):
         """initializing method called when an instance is instantiated"""
         if not id:
-            self.id = type(Base).__nb__objects + 1
+            type(self).__nb__objects += 1
+            self.id = type(self).__nb__objects
         else:
             self.id = id
 
