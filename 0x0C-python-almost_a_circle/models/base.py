@@ -7,15 +7,15 @@ import json
 
 class Base:
     """Base class containing all common attributes"""
-    _nb_objects = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """initializing method called when an instance is instantiated"""
         if id:
             self.id = id
         else:
-            type(self).__nb__objects += 1
-            self.id = type(self).__nb__objects
+            type(self).__nb_objects += 1
+            self.id = type(self).__nb_objects
 
     @staticmethod
     def to_json_string(list_dictionaries):
