@@ -36,9 +36,8 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    """height attribute setter method"""
-
     def height(self, value):
+        """height attribute setter method"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
