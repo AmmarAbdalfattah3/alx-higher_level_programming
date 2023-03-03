@@ -80,16 +80,16 @@ class Rectangle(Base):
     def display(self):
         """displays a Rectangle instance in # characters"""
         if self.width == 0 or self.height == 0:
-            print ""
+            print("")
             return
-        shape = []
+        rec_form = []
         for i in range(self.height):
             for x in range(self.width):
-                shape.append('#')
+                rec_form.append('#')
                 if i < self.height - 1:
-                    shape.append('\n')
-                    shape = shape.join('')
-                    print(shape)
+                    rec_form.append('\n')
+                    rec_form = ().join(shape)
+                    print(rec_form)
 
     def update(self, *args, **kwargs):
         """"updates a Rectangle instance with new attributes"""
