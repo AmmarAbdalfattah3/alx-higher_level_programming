@@ -3,6 +3,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
 	"""a class that creates squres"""
 
@@ -47,7 +48,7 @@ class Square(Rectangle):
                     self.x = value
                 elif k == "y":
                     self.y = value
-    
+
     def to_dictionary(self):
         """returns a dictionary representing a Square instance"""
         return {

@@ -2,6 +2,8 @@
 """a module for Rectangle class definition"""
 
 from models import Base
+
+
 class Rectangle(Base):
 	"""a class that creates rectangles"""
 
@@ -18,7 +20,7 @@ class Rectangle(Base):
 	def width(self):
 		"""width attribute getter method"""
 		return self.__width
-    
+
     @width.setter
     def width(self, value):
     	"""width attribute setter method"""
