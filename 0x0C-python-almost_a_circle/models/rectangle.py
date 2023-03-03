@@ -9,12 +9,13 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x, y, id):
         """initialilzer for Rectangle class to be
-           called when an istance is instantiated"""
-           super().__init__(id)
-           self.width = width
-           self.height = height
-           self.x = x
-           self.y = y
+           called when an istance is instantiated
+        """
+        super().__init__(id)
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
