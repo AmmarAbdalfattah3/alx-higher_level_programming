@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """a module for Rectangle class definition"""
 
-from models import Base
+from models.base import Base
 
 
 class Rectangle(Base):
