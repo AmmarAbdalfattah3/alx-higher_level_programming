@@ -7,7 +7,7 @@ from models.base import Base
 class Rectangle(Base):
     """a class that creates rectangles"""
 
-    def __init__(self, width, height, x, y, id):
+    def __init__(self, width, height, x=0, y=0, id=None):
         """initialilzer for Rectangle class to be
            called when an istance is instantiated
         """

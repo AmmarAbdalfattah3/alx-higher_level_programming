@@ -1,20 +1,30 @@
 #!/usr/bin/python3
-""" 0-main """
-from models.base import Base
+""" Check """
+from models.rectangle import Rectangle
 
-if __name__ == "__main__":
+r = Rectangle(12, 14)
+if r is None:
+    print("Can't create Rectangle")
+    exit(1)
 
-    b1 = Base()
-    print(b1.id)
+if r._Rectangle__width != 12:
+    print("Wrong width: {}".format(r._Rectangle__width))
+    exit(1)
 
-    b2 = Base()
-    print(b2.id)
+if r._Rectangle__height != 14:
+    print("Wrong height: {}".format(r._Rectangle__height))
+    exit(1)
 
-    b3 = Base()
-    print(b3.id)
+if r._Rectangle__x != 0:
+    print("Wrong x: {}".format(r._Rectangle__x))
+    exit(1)
 
-    b4 = Base(12)
-    print(b4.id)
+if r._Rectangle__y != 0:
+    print("Wrong y: {}".format(r._Rectangle__y))
+    exit(1)
 
-    b5 = Base()
-    print(b5.id)
+if r.id != 1:
+    print("ID is not initialized at 1")
+    exit(1)
+
+print("OK", end="")
