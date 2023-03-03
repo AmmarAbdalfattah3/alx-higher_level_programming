@@ -11,11 +11,11 @@ class Base:
 
     def __init__(self, id=None):
         """initializing method called when an instance is instantiated"""
-        if not id:
+        if id:
+            self.id = id
+        else:
             type(self).__nb__objects += 1
             self.id = type(self).__nb__objects
-        else:
-            self.id = id
 
     @staticmethod
     def to_json_string(list_dictionaries):
