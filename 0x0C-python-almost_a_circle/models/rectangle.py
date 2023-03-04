@@ -108,18 +108,18 @@ class Rectangle(Base):
                     self.x = arg
                     index += 1
 
-                elif kwargs:
-                    for key, value in kwargs.items():
-                        if key == 'id':
-                            self.id = value
-                        elif key == 'width':
-                            self.width = value
-                        elif key == 'height':
-                            self.height = value
-                        elif key == 'x':
-                            self.x = value
-                        elif key == 'y':
-                            self.y = value
+        elif kwargs:
+            for key, value in kwargs.items():
+                if key == 'id':
+                    self.id = value
+                elif key == 'width':
+                    self.width = value
+                elif key == 'height':
+                    self.height = value
+                elif key == 'x':
+                    self.x = value
+                elif key == 'y':
+                    self.y = value
 
     def to_dictionary(self):
         """returns a dictionary representing a Rectangle instance"""
