@@ -88,7 +88,7 @@ class Rectangle(Base):
                 rec_form.append('#')
                 if i < self.height - 1:
                     rec_form.append('\n')
-        rec_form = ('').join(shape)
+        rec_form = ('').join(rec_form)
         print(rec_form)
 
     def update(self, *args, **kwargs):
