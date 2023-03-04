@@ -86,8 +86,8 @@ class Rectangle(Base):
         for i in range(self.height):
             for x in range(self.width):
                 rec_form.append('#')
-                if i < self.height - 1:
-                    rec_form.append('\n')
+            if i < self.height - 1:
+                rec_form.append('\n')
         rec_form = ('').join(rec_form)
         print(rec_form)
 
