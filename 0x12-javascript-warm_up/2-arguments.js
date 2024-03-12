@@ -2,11 +2,11 @@
 
 const len = process.argv.length;
 
-if (len == 2)
+if (len === 2)
 {
 	console.log('No argument');
 }
-else if (len == 1)
+else if (len > 2)
 {
 	console.log('Arguments found');
 }
