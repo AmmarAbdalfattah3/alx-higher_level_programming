@@ -6,7 +6,7 @@ if (len === 0)
 {
 	console.log('No argument');
 }
-else
+if (len === 1)
 {
 	console.log(process.argv[2]);
 }
