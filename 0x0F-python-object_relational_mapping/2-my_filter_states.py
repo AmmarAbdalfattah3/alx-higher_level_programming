@@ -21,7 +21,7 @@ if __name__ == "__main__":
         passwd=password,
         database=db)
     cur = connection.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'\
+    cur.execute("SELECT * FROM states WHERE name='{}'\
             ORDER BY states.id ASC;".format(name_input))
 
     for row in cur.fetchall():
