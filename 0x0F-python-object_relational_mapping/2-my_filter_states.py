@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     for row in cur.fetchall():
         if row[1] == name_input:
-            print(row):
+            print(row)
 
     cur.close()
     connection.close()
