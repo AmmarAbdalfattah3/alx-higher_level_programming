@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This module lists all states from the database `hbtn_0e_0_usa`"""
+"""This module  lists all states with a name starting
+   with N (upper N) from the database hbtn_0e_0_usa"""
 
 
 import sys
@@ -13,7 +14,8 @@ if __name__ == "__main__":
 
     connection = MySQLdb.connect(user=name, passwd=password, database=db)
     cur = connection.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    cur.execute(
+        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
 
     for row in cur.fetchall():
         print(row)
