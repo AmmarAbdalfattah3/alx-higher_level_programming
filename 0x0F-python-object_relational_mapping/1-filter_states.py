@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module lists all states with a name starting
-   with N (upper N) from the database hbtn_0e_0_usa"""
+   with N (upper N) from the database hbtn_0e_0_usa
+"""
 
 
 import sys
