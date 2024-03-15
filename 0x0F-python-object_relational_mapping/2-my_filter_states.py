@@ -19,11 +19,10 @@ if __name__ == "__main__":
         port=3306,
         user=name,
         passwd=password,
-        database=db,
-        name = name_input)
+        database=db)
     cur = connection.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE 'N%'\
-            ORDER BY states.id ASC;")
+            ORDER BY states.id ASC;".format(name_input))
 
     for row in cur.fetchall():
         print(row)
