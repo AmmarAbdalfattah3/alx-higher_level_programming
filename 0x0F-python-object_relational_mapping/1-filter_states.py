@@ -19,8 +19,8 @@ if __name__ == "__main__":
         passwd=password,
         database=db)
     cur = connection.cursor()
-    cur.execute(
-        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id ASC")
+    cur.execute("SELECT * FROM states WHERE name LIKE 'N%'\
+            ORDER BY states.id ASC")
 
     for row in cur.fetchall():
         print(row)
