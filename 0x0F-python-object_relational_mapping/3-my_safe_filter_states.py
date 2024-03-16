@@ -27,7 +27,8 @@ if __name__ == "__main__":
             ORDER BY states.id ASC;".format(name_input))
 
     for row in cur.fetchall():
-        print(row)
+        if row[1] == name_input:
+            print(row)
 
     cur.close()
     connection.close()
