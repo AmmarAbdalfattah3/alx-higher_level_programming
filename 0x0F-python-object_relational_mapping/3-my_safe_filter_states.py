@@ -23,12 +23,11 @@ if __name__ == "__main__":
         passwd=password,
         database=db)
     cur = connection.cursor()
-    cur.execute("SELECT * FROM states WHERE name='{:s}'\
-            ORDER BY states.id ASC;".format(name_input))
+    cur.execute("SELECT * FROM states WHERE name=%s\
+            ORDER BY states.id ASC;", (name_input,))
 
     for row in cur.fetchall():
-        if row[1] == name_input:
-            print(row)
+        print(row)
 
     cur.close()
     connection.close()
