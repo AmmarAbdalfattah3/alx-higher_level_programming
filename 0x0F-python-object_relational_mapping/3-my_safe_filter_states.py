@@ -24,7 +24,7 @@ if __name__ == "__main__":
         database=db)
     cur = connection.cursor()
     cur.execute("SELECT * FROM states WHERE name='{:s}'\
-            ORDER BY states.id ASC;".format(name_input))
+            ORDER BY id ASC;".format(name_input))
 
     for row in cur.fetchall():
         if row[1] == name_input:
