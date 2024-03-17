@@ -20,8 +20,11 @@ if __name__ == "__main__":
         passwd=password,
         database=db)
     cur = connection.cursor()
-    cur.execute("SELECT cities.id, cities.name, states.name FROM cities, states\
-            WHERE cities.state_id=states.id ORDER BY cities.id ASC")
+
+    query = "SELECT cities.id, cities.name, states.name FROM cities, states\
+            WHERE cities.state_id=states.id ORDER BY cities.id ASC"
+
+    cur.execute(query)
 
     for row in cur.fetchall():
         print(row)
