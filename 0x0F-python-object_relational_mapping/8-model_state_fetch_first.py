@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    rows = session.query(State).order_by(State.id).first()
+    row = session.query(State).order_by(State.id).first()
 
     if row is None:
         print("Nothing")
