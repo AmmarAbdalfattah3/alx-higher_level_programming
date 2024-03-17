@@ -21,7 +21,7 @@ if __name__ == "__main__":
         database=db)
     cur = connection.cursor()
     cur.execute("SELECT cities.id, cities.name, states.name FROM cities, states\
-            WHERE cities.state_id=states.id ORDER BY cities.id")
+            WHERE cities.state_id=states.id ORDER BY cities.id ASC")
 
     for row in cur.fetchall():
         print(row)
