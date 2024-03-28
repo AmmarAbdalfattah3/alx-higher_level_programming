@@ -5,11 +5,11 @@
 """
 
 import sys
-import urllib
+import urllib.request
 
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    request = urllib.request.Request(url)
-    with urllib.request.urlopen(request) as res:
+    req = urllib.request.Request(url)
+    with urllib.request.urlopen(req) as res:
         print(res.headers.get('X-Request-Id'))
